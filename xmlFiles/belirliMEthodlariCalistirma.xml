@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--Methodlari secerken,bir class icerisindeki
+-ozellikle calistirilacak methodlari ifade etmek istersek include
+-ozellikle calistirilmayacak methodlari ifade etmek istersek exclude kullaniriz-->
+<suite name="Method Calistirma">
+
+    <test name="Belirli methodlari calistirma">
+
+        <classes>
+            <class name="test.day15.C04_NegativeLoginTesti">
+                <!--day15_SoftAssert.C04_NegativeLoginTesti classinda istedigimiz methodu calistirmak icin-->
+                <methods>
+                    <include name="yanlisEmailTesti"></include>
+                </methods>
+            </class>
+            <class name="test.day16_SmokeTests.C02_NegatifLoginTesti">
+                <!--day16 packagefaki negatif login clasindaki
+       yanlis emailtesti disindaki tum methodlari calıstırmak istersek-->
+                <methods>
+                    <exclude name="yanlisEmailTesti"></exclude>
+                </methods>
+
+            </class>
+
+
+       </classes>
+
+
+   </test>
+</suite>
