@@ -23,11 +23,17 @@ public class QualitydemyPage {
     @FindBy(id="login-password")
     public WebElement passwordKutusu;
 
-    @FindBy(xpath = "//button[text()='Login']")
+    @FindBy(xpath = "//button[@class='btn red radius-5 mt-4 w-100']")
     public WebElement loginButonu;
 
-    @FindBy(xpath = "//span[@class='email']")
+    @FindBy(xpath = "//*[text()='Accept']")
+    public WebElement acceptbutonu;
+
+
+    @FindBy(xpath = "//a[text()='My courses']")
     public WebElement basariliGirisCoursesLinki;
+
+
 
 
 }

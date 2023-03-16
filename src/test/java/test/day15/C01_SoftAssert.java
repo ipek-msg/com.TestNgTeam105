@@ -16,7 +16,7 @@ public class C01_SoftAssert {
 
         // amazon anasayfaya gittiginizi dogrulayin
         SoftAssert softAssert= new SoftAssert();
-        String expectedUrlKelime="amazon";
+        String expectedUrlKelime="ramazon";
         String actualUrl= Driver.getDriver().getCurrentUrl();
         softAssert.assertTrue(actualUrl.contains(expectedUrlKelime),"Url amazon icermiyor");
 
